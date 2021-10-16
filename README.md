@@ -1,4 +1,4 @@
-# A course project of CNN
+# A course assignment of CNN
 
 #### Background
 
