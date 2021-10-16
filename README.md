@@ -8,11 +8,15 @@
 
 #### Overview
 
-	1. Preprocess of CIFAR-10 dataset
- 	2. Define, train and evaluate the baseline model
- 	3. Deal with overfitting situation
- 	4. Deal with instability during learning process
- 	5. Make predictions with this model
+​	1.Preprocess of CIFAR-10 dataset
+
+​	2.Define, train and evaluate the baseline model
+
+​	3.Deal with overfitting situation
+
+​	4.Deal with instability during learning process
+
+​	5.Make predictions with this model
 
 #### What is CIFAR-10?
 
@@ -78,7 +82,7 @@ model.add(Dense(10, activation='softmax'))
 
 Second, the instablility during learning. We will apply some approaches and techniques to address this.
 
-![4VGGblock_plot](/Users/bransonsheldon/Downloads/4VGGblock_plot.png)
+![4VGGblock_plot](README.assets/4VGGblock_plot.png)
 
 #### Deal with overfitting situation
 
@@ -108,7 +112,7 @@ Second, the instablility during learning. We will apply some approaches and tech
 
    After adding Dropout Regularization and Data Augment, the accuracy of new model reached around 85%, we can see that the overfit problem has been well solved.
 
-   ![4VGGblock_plot_improve](/Users/bransonsheldon/Downloads/4VGGblock_plot_improve.png)
+   ![4VGGblock_plot_improve](README.assets/4VGGblock_plot_improve.png)
 
 #### Deal with instability during learning process
 
@@ -122,7 +126,7 @@ Second, the instablility during learning. We will apply some approaches and tech
 
 ​	The final model's accuracy reached 86%. So we can save this model and use it for further predictions.
 
-​	![4VGGblock_plot_final](/Users/bransonsheldon/Downloads/results/4VGGblock_plot_final.png)
+​	![4VGGblock_plot_final](README.assets/4VGGblock_plot_final.png)	
 
 #### Make predictions with this model
 
@@ -148,13 +152,14 @@ Second, the instablility during learning. We will apply some approaches and tech
 
    I use a image from the CIFAR-10's website, and try to predict it with our final model. The image looks like this. Apparently, it is a horse, the corresponding class number is 7.
 
-   ![horse5](/Users/bransonsheldon/Documents/programmeFile/pythonFile/toddler/horse5.png)
+   ![horse5](README.assets/horse5.png)
 
    ```
    predict = model.predict(img)
    predict = np.argmax(predict, axis=1)
    ```
 
-   ![image-20211016155744005](/Users/bransonsheldon/Library/Application Support/typora-user-images/image-20211016155744005.png)
+   ![image-20211016181614127](README.assets/image-20211016181614127.png)
 
    As shown in the picture, the model gives the correct prediction.
+
